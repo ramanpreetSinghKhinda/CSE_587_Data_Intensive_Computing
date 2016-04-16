@@ -2,6 +2,7 @@ import java.io.IOException;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.Mapper;
@@ -16,10 +17,11 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
  * @category Project: Parallel Processing of Big Data using Hadoop MapReduce and
  *           build a Dashboard for Analysis and Visualization of Results
  *
- *           Part_2_Problem_4: Finding the most popular exam slot in every building
+ *           Part_2_Problem_4: Finding most used class in every hall for exam
+ *           					using time slot
  * 
  * @Input bina_examschedule.tsv
- * @Output <BuildingName, TimeSlot>
+ * @Output <Building, <Hall, No of exams held>>
  *
  **/
 public class PopularExamSlots {
@@ -31,16 +33,17 @@ public class PopularExamSlots {
 	 *            is the value at the above line number
 	 * @param Text
 	 *            is the key for output from Mapper1
-	 * @param Text
+	 * @param IntWritable
 	 *            is the value for output from Mapper1
 	 * 
-	 * @OutputFormat <key_building_lecture_room, value_enrolled_capacity>
-	 * @Output <BuildingName_LectureRoom, StudentsEnrolled_ClassCapacity>
+	 * @OutputFormat <key_exam_hall_stime, one>
+	 * @Output <Exam_Hall, 1>
 	 * 
 	 */
 	public static class Mapper1 extends Mapper<Object, Text, Text, Text> {
-		private Text key_building_lecture_room = new Text();
-		private Text value_enrolled_capacity = new Text();
+
+		private Text key_exam_hall_stime = new Text();
+		private Text one = new Text();
 
 		public void map(Object key_line_number, Text value_at_key, Context context)
 				throws IOException, InterruptedException {
@@ -49,9 +52,21 @@ public class PopularExamSlots {
 				if (tokens.length != 14) {
 					return;
 				}
+				
+				if(tokens[0].equals("") || tokens[0].contains("TERM") || tokens[0].contains("----")){
+					return;
+				}
 
-				String building = tokens[3].split(" ")[0];
-				context.write(key_building_lecture_room, value_enrolled_capacity);
+//				if(Integer.parseInt(tokens[0]) < 0){
+//					return;
+//				}
+//				
+				String exam_hall = tokens[5];
+				String stime = tokens[8];
+				
+				key_exam_hall_stime.set(exam_hall + "\t" + stime);
+				one.set(1 + "");
+				context.write(key_exam_hall_stime, one);
 			} catch (NumberFormatException e) {
 				System.out.println("NumberFormatException occured... Don't worry");
 			}
@@ -61,38 +76,37 @@ public class PopularExamSlots {
 	/**
 	 * @param Text
 	 *            is the key from Mapper1 output
-	 * @param Text
+	 * @param IntWritable
 	 *            is the Iterable value from Mapper1 output
 	 * @param Text
 	 *            is the key for output from Reducer1
-	 * @param Text
+	 * @param IntWritable
 	 *            is the value for output from Reducer1
 	 * 
-	 * @OutputFormat <key_building_lecture_room, value_total_enrolled_capacity>
-	 * @Output <BuildingName_LectureRoom, TotalEnrollment_TotalCapacity>
+	 * @OutputFormat <key_hall, slot_stime>
+	 * @Output <Building_Hall, StartTime_Sum>
 	 * 
 	 */
 	public static class Reducer1 extends Reducer<Text, Text, Text, Text> {
-		private Text value_total_enrolled_capacity = new Text();
+		private Text slot_and_no_of_slots = new Text();
+		private Text key_hall = new Text();
 
-		public void reduce(Text key_building_lecture_room, Iterable<Text> value_iterable_enrolled_capacity,
-				Context context) throws IOException, InterruptedException {
-			int total_enrollment = 0;
-			int total_capacity = 0;
+		public void reduce(Text key_year_dept, Iterable<Text> time_slots, Context context)
+				throws IOException, InterruptedException {
 
-			for (Text enrolled_capacity : value_iterable_enrolled_capacity) {
-				if (!enrolled_capacity.toString().split("-")[0].equals("")
-						&& !enrolled_capacity.toString().split("-")[1].equals("")) {
-					total_enrollment += Integer.parseInt(enrolled_capacity.toString().split("-")[0]);
-					total_capacity += Integer.parseInt(enrolled_capacity.toString().split("-")[1]);
-
-				} else {
-					return;
-				}
+			int sum = 0;
+			for (Text students_enrolled : time_slots) {
+				sum += 1;
 			}
-
-			value_total_enrolled_capacity.set(total_enrollment + "-" + total_capacity);
-			context.write(key_building_lecture_room, value_total_enrolled_capacity);
+			
+//			System.out.println(key_year_dept.toString().split("\\t")[1]);
+			if(key_year_dept.toString().split("\t").length < 2){
+				return;
+			}
+			System.out.println(key_year_dept.toString().split("\t")[1] + "\t" + sum );
+			key_hall.set(key_year_dept.toString().split("\t")[0]);
+			slot_and_no_of_slots.set(key_year_dept.toString().split("\t")[1] + "-" + sum );
+			context.write(key_hall, slot_and_no_of_slots);
 		}
 	}
 
@@ -107,23 +121,24 @@ public class PopularExamSlots {
 	 * @param Text
 	 *            is the value for output from Mapper2
 	 * 
-	 * @OutputFormat <key_building_name, value_total_enrolled_capacity>
-	 * @Output <BuildingName, TotalEnrollment_TotalCapacity>
+	 * @OutputFormat <building_slot, number_of_slots>
+	 * @Output <Building, <Slot, no_of_slots>>
 	 */
 	public static class Mapper2 extends Mapper<Object, Text, Text, Text> {
-		Text key_building_name = new Text();
-		Text value_total_enrolled_capacity = new Text();
+		Text building_slot = new Text();
+		Text number_of_slots = new Text();
 
 		public void map(Object key_line_number, Text value_at_key, Context context)
 				throws IOException, InterruptedException {
 			String[] fields = value_at_key.toString().split("\\t");
 
-			String building_name = fields[0].split(" ")[0];
-
-			key_building_name.set(building_name);
-			value_total_enrolled_capacity.set(fields[1]);
-
-			context.write(key_building_name, value_total_enrolled_capacity);
+			String building = fields[0].split(" ")[0];
+			String slot = fields[1].split("-")[0];
+			int no_slots = Integer.parseInt(fields[1].split("-")[1]);
+			
+			building_slot.set(building + slot);
+			number_of_slots.set(no_slots + "");
+			context.write(building_slot, number_of_slots);
 		}
 	}
 
@@ -137,36 +152,34 @@ public class PopularExamSlots {
 	 * @param Text
 	 *            is the value for output from Reducer2
 	 * 
-	 * @OutputFormat <key_building_name, value_percent_vacant>
-	 * @Output <BuildingName, PercentVacant>
+	 * @OutputFormat <key_year_most_demanding_dept,
+	 *               value_highest_enrolled_students>
+	 * @Output <Year_MostDemandingDept, HighestEnrolledStudents>
+	 * 
 	 */
 	public static class Reducer2 extends Reducer<Text, Text, Text, Text> {
-		Text value_percent_vacant = new Text();
+//		Text hall_slot = new Text();
+		Text no_slots = new Text();
 
-		public void reduce(Text key_building_name, Iterable<Text> value_iterable_total_enrolled_capacity,
+		public void reduce(Text building_slot, Iterable<Text> no_of_slots,
 				Context context) throws IOException, InterruptedException {
-			int total_enrollment = 0;
-			int total_capacity = 0;
+			
+			int slots_in_building = 0;
 
-			for (Text total_enrolled_capacity : value_iterable_total_enrolled_capacity) {
-				int enrollment = Integer.parseInt(total_enrolled_capacity.toString().split("-")[0]);
-				int capacity = Integer.parseInt(total_enrolled_capacity.toString().split("-")[1]);
-
-				total_enrollment += enrollment;
-				total_capacity += capacity;
+			for (Text ns : no_of_slots) {
+				slots_in_building += Integer.parseInt(ns.toString());
 			}
 
-			int percent_vacant = ((total_capacity - total_enrollment) * 100) / total_capacity;
+			no_slots.set(slots_in_building + "");
 
-			value_percent_vacant.set(percent_vacant + "% of this buildings' capacity has not been used over the years");
-			context.write(key_building_name, value_percent_vacant);
+			context.write(building_slot, no_slots);
 		}
 	}
 
 	public static void main(String[] args) throws Exception {
 		String temp = "Temp";
 		Configuration conf = new Configuration();
-		Job job = Job.getInstance(conf, "Get number of students enrolled per lecture hall");
+		Job job = Job.getInstance(conf, "Get number of slots per exam hall");
 		job.setJarByClass(PopularExamSlots.class);
 		job.setMapperClass(Mapper1.class);
 		job.setCombinerClass(Reducer1.class);
@@ -178,7 +191,7 @@ public class PopularExamSlots {
 		job.waitForCompletion(true);
 
 		Configuration conf2 = new Configuration();
-		Job job2 = Job.getInstance(conf2, "Get percent vacancy per building");
+		Job job2 = Job.getInstance(conf2, "Get number of slots per building");
 		job2.setJarByClass(PopularExamSlots.class);
 		job2.setMapperClass(Mapper2.class);
 		job2.setReducerClass(Reducer2.class);
