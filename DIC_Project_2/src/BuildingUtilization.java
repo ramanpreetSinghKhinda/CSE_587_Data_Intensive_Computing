@@ -68,7 +68,7 @@ public class BuildingUtilization {
 				}
 
 				key_building_lecture_room.set(building_lecture_room);
-				value_enrolled_capacity.set((students_enrolled + "").concat("-").concat(class_cap + ""));
+				value_enrolled_capacity.set((students_enrolled + "").concat("_").concat(class_cap + ""));
 
 				context.write(key_building_lecture_room, value_enrolled_capacity);
 			} catch (NumberFormatException e) {
@@ -100,17 +100,17 @@ public class BuildingUtilization {
 			int total_capacity = 0;
 
 			for (Text enrolled_capacity : value_iterable_enrolled_capacity) {
-				if (!enrolled_capacity.toString().split("-")[0].equals("")
-						&& !enrolled_capacity.toString().split("-")[1].equals("")) {
-					total_enrollment += Integer.parseInt(enrolled_capacity.toString().split("-")[0]);
-					total_capacity += Integer.parseInt(enrolled_capacity.toString().split("-")[1]);
+				if (!enrolled_capacity.toString().split("_")[0].equals("")
+						&& !enrolled_capacity.toString().split("_")[1].equals("")) {
+					total_enrollment += Integer.parseInt(enrolled_capacity.toString().split("_")[0]);
+					total_capacity += Integer.parseInt(enrolled_capacity.toString().split("_")[1]);
 
 				} else {
 					return;
 				}
 			}
 
-			value_total_enrolled_capacity.set(total_enrollment + "-" + total_capacity);
+			value_total_enrolled_capacity.set(total_enrollment + "_" + total_capacity);
 			context.write(key_building_lecture_room, value_total_enrolled_capacity);
 		}
 	}
@@ -168,8 +168,8 @@ public class BuildingUtilization {
 			int total_capacity = 0;
 
 			for (Text total_enrolled_capacity : value_iterable_total_enrolled_capacity) {
-				int enrollment = Integer.parseInt(total_enrolled_capacity.toString().split("-")[0]);
-				int capacity = Integer.parseInt(total_enrolled_capacity.toString().split("-")[1]);
+				int enrollment = Integer.parseInt(total_enrolled_capacity.toString().split("_")[0]);
+				int capacity = Integer.parseInt(total_enrolled_capacity.toString().split("_")[1]);
 
 				total_enrollment += enrollment;
 				total_capacity += capacity;
@@ -177,7 +177,8 @@ public class BuildingUtilization {
 
 			int percent_vacant = ((total_capacity - total_enrollment) * 100) / total_capacity;
 
-			value_percent_vacant.set(percent_vacant + "% of this buildings' capacity has not been used over the years");
+			// % of this buildings' capacity that has not been used over the years
+			value_percent_vacant.set(percent_vacant + "%");
 			context.write(key_building_name, value_percent_vacant);
 		}
 	}
