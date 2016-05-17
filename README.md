@@ -2,7 +2,7 @@
 =======================================
 
 
-**Goal**</ br>
+**Goal**
 Learn Parallel Processing of Big Data using Hadoop MapReduce and Build Analysis and Visualization Dashboard(s) using Tableau
 
 **Context of Problem Statement**</ br>
