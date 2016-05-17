@@ -1,5 +1,6 @@
-<p align="center">Data Intensive Computing
+<p align="center">Data Intensive Computing<br>Hadoop - MapReduce - Tableau<br>CSE 587</br>
 =======================================
+
 
 **Goal**</ br>
 Learn Parallel Processing of Big Data using Hadoop MapReduce and Build Analysis and Visualization Dashboard(s) using Tableau
@@ -33,17 +34,14 @@ You can either run Hadoop MR jobs in HDFS which require you to run the HDFS ever
 3. Download the Jar from the below link and copy paste it in the **Plugin Folder** of Eclipse
 	https://github.com/winghc/hadoop2x-eclipse-plugin/blob/master/release/hadoop-eclipse-kepler-plugin-2.4.1.jar
 
-
 4. Goto Project Build path and add Hadoop jars as shown below
 ![Img_1](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Images/1.png)
-
 
 5. Configure program parameters in run configuration
 ![Img_2](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Images/2.png)
 
 	*Alternatively if you are running Hadoop on HDFS than you may want to give the HDFS path for the Arguments as shown below
 > hdfs://localhost:9000/user/rkhinda/input/ hdfs://localhost:9000/user/rkhinda/output/
-
 
 6.  Define the location of a Hadoop infrastructure for running MapReduce applications
 ![Img_3](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Images/3.png)
