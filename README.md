@@ -57,7 +57,7 @@ Questions that we solved
 > UB student affairs want to globalize some of its courses which are highly demanding among students but we are not able to shortlist the courses. Can you utilize the “UB Course Scheduling data” to gather an insight on which courses have always been the first choice for the students?
 
 >**Solution:**
-> https://github.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/blob/master/Problem_2/Question_1_UB_Course_Demand/UBCourseDemand.java
+> https://github.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/blob/master/Problem_2/Question_1_UB_Course_Demand/UBCourseDemand.java</br>
 > Tableau Link: https://public.tableau.com/profile/publish/Q_1_UB_Course_Demand/P2_Q1#!/publish-confirm
 
 ---- 
@@ -67,7 +67,7 @@ Questions that we solved
 > Since the popularity might change every year we also need to observe trends over the past few years. Therefore, our question would be, find the most popular department by number of enrollments every year.
 
 >**Solution:**
-> https://github.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/blob/master/Problem_2/Question_2_Popular_Department/PopularDepartment.java
+> https://github.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/blob/master/Problem_2/Question_2_Popular_Department/PopularDepartment.java</br>
 > Tableau Link: https://public.tableau.com/profile/publish/Q_2_Popular_Department/AnalysisofPopularDepartments#!/publishconfirm
 
 ---- 
@@ -78,7 +78,7 @@ Questions that we solved
 
 
 >**Solution:**
-> https://github.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/blob/master/Problem_2/Question_3_Building_Utilization/BuildingUtilization.java
+> https://github.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/blob/master/Problem_2/Question_3_Building_Utilization/BuildingUtilization.java</br>
 > Tableau Link: https://public.tableau.com/profile/publish/P2_Q3_0/P2_Q3#!/publish-confirm
 
 ---- 
@@ -88,7 +88,7 @@ Questions that we solved
 > Since the popularity might change every year we also need to observe trends over the past few years. Therefore, our question would be, find the most popular department by number of enrollments every year.
 
 >**Solution:**
-> https://github.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/blob/master/Problem_2/Question_2_Popular_Department/PopularDepartment.java
+> https://github.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/blob/master/Problem_2/Question_2_Popular_Department/PopularDepartment.java</br>
 > Tableau Link: https://public.tableau.com/profile/publish/Q_2_Popular_Department/AnalysisofPopularDepartments#!/publishconfirm
 
 ---- 
@@ -98,7 +98,7 @@ Questions that we solved
 > Being a World Class University we do not want our students to fight for a seat during the class. Can you utilize the “UB Course Scheduling data” to provide an insight on what time of the day have remained most occupied with lectures during the years and what is the most suitable time to reschedule these courses, so that we can allocate them class of proper size?
 
 >**Solution:**
-> https://github.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/blob/master/Problem_2/Question_4_LectureTime_Analysis/LectureTimeAnalysis.java
+> https://github.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/blob/master/Problem_2/Question_4_LectureTime_Analysis/LectureTimeAnalysis.java</br>
 > Tableau Link: https://public.tableau.com/profile/publish/Q_4_LectureTime_Analysis/P2_Q4#!/publish-confirm
 
 ---- 
@@ -106,7 +106,7 @@ Questions that we solved
 > Exam season is stressful for everyone. For the students and especially for the staff. They have to ensure classes are allotted and everyone finds their place. From the 6 years’ exam data that we have we aim to find the most popular exam slots in every building. By this data we can find out what time slot most exams are held. We can further analyze this data and make decisions to move some of the exams at this time slot to another. We can also make decisions to move them to other halls to.
 
 >**Solution:**
-> https://github.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/blob/master/Problem_2/Question_5_Popular_Exam_Slots/PopularExamSlots.java
+> https://github.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/blob/master/Problem_2/Question_5_Popular_Exam_Slots/PopularExamSlots.java</br>
 > Tableau Link: https://public.tableau.com/profile/publish/Q_5_Popular_Exam_Slots/P2_Q5#!/publish-confirm
 
 
