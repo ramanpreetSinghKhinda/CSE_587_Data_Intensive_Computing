@@ -1,9 +1,5 @@
-<p align="center">Data Intensive Computing</p>
-==================================================
-<p align="center">Hadoop - MapReduce - Tableau</p>
-==================================================
-<p align="center">CSE 587</p>
-==================================================
+<p align="center">Data Intensive Computing<br>Hadoop - MapReduce - Tableau<br>CSE 587
+==========================================================================================
 
 
 **Goal**</ br>
