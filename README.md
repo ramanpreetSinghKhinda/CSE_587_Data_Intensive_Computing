@@ -27,7 +27,7 @@ You can either run Hadoop MR jobs in HDFS which require you to run the HDFS ever
 	$ nano .bash_profile<br />
 	> export JAVA_HOME = $(/usr/libexec/java_home -v 1.7)<br />
 	> export HADOOP_HOME = */localpath/hadoop-2.6.4*<br />
-	> PATH =  "$HADOOP_HOME/bin:${PATH}"<br />
+	> PATH =  "$\$$HADOOP_HOME/bin:$\$${PATH}"<br />
 	> export PATH<br />
 
 	$ source .bash_profile
@@ -48,12 +48,28 @@ You can either run Hadoop MR jobs in HDFS which require you to run the HDFS ever
 6.  Define the location of a Hadoop infrastructure for running MapReduce applications
 ![Img_3](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Images/3.png)
 
-
+Credits
+----------
+ We acknowledge and grateful to Professor Bina Ramamurthy (http://www.cse.buffalo.edu/faculty/bina/) and TA Junfei Wang (https://www.linkedin.com/in/junfei-wang-5971a848) for their continuous support throughout the course that helped us learn the skills of Data Intensive Computing
+ 
+ 
 Contributors
---------------------
+------------------
  ![Img_5](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Images/5.png)
 
-Ramanpreet Singh Khinda (rkhinda@buffalo.edu)
+Ramanpreet Singh Khinda (rkhinda@buffalo.edu)</br>
 https://branded.me/ramanpreet1990
 
 Elroy Preetham Alva (elroypre@buffalo.edu)
+ 
+
+License
+--------------------
+Copyright {2016} 
+{Ramanpreet Singh Khinda rkhinda@buffalo.edu & Elroy Preetham Alva (elroypre@buffalo.edu)} 
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
