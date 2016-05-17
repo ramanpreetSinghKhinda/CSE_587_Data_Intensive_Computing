@@ -1,11 +1,11 @@
 <p align="center">Data Intensive Computing</br>Hadoop - MapReduce - Tableau</br>CSE 587
 ==========================================================================================
+![Img_4](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Images/4.png)
 
-
-**Goal**</br>
+**Goal**</ br>
 Learn Parallel Processing of Big Data using Hadoop MapReduce and Build Analysis and Visualization Dashboard(s) using Tableau
 
-**Context of Problem Statement**</br>
+**Context of Problem Statement**</ br>
 Class room scheduling for courses is complex problem. It is all the more difficult in a department where the enrollments are increasing and number of courses and class sizes are increasing. You are given the data for courses and class rooms from 1931 to 2017. Data analysis you perform will be driven by problems you want to solve and questions you want answered. Users for this “data product” are (i) course schedulers (ii) teachers teaching a course (iii) university planners and (iv) university development department for fund raising related activities.
 
 Understand the domain and design a list of relevant questions. You are required to design and implement MR algorithms to extract useful intelligence to answer the questions. This intelligence will be offered as answers to questions through a web interface (dashboard). The answers to these questions could be through visualization, textual output or numerical information. The dashboard will feature ability for the user to interact by choosing from a set of questions and also by configuring the parameters for the questions and the visualizations. Sample questions to get you started are given below one for each type of user: (i) List all the class rooms of capacity greater than 200 for Mondays and Wednesdays between 5 and 6.20PM for Spring 2016 (ii) List a class room with capacity greater than 200 for May 9, 2016, 7-11pm (iii) track the trend in growth of seats per semester per building in the last 10 years in an interactive visualizations and (iv) compare enrollment increase over last 10 years to the building space increase in a visualization.
@@ -45,3 +45,13 @@ You can either run Hadoop MR jobs in HDFS which require you to run the HDFS ever
 
 6.  Define the location of a Hadoop infrastructure for running MapReduce applications
 ![Img_3](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Images/3.png)
+
+
+Contributors
+--------------------
+ ![Img_5](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Images/5.png)
+
+Ramanpreet Singh Khinda (rkhinda@buffalo.edu)
+https://branded.me/ramanpreet1990
+
+Elroy Preetham Alva (elroypre@buffalo.edu)
