@@ -1,8 +1,10 @@
-<p align="center">Data Intensive Computing</br>Hadoop - MapReduce - Tableau</br>CSE 587</br>
-=======================================
+<p align="center">Data Intensive Computing</p>
+<p align="center">Hadoop - MapReduce - Tableau</p>
+<p align="center">CSE 587</p>
+==================================================
 
 
-**Goal**
+**Goal**</ br>
 Learn Parallel Processing of Big Data using Hadoop MapReduce and Build Analysis and Visualization Dashboard(s) using Tableau
 
 **Context of Problem Statement**</ br>
