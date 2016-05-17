@@ -139,4 +139,4 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 Important
 ---------
-You are authorized to use the source code and make modifications as applicable by the **above Licence** however you are **not authorized** to make use of the university protected data source
+You are authorized to use the source code and make modifications as applicable by the **above Licence** however you are **not authorized** to make use of the university protected classroom scheduling data that is used in this project
