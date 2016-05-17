@@ -1,4 +1,4 @@
-<p align="center">Data Intensive Computing<br>Hadoop - MapReduce - Tableau<br>CSE 587</br>
+<p align="center">Data Intensive Computing</br>Hadoop - MapReduce - Tableau</br>CSE 587</br>
 =======================================
 
 
