@@ -68,7 +68,7 @@ Questions that we solved
 
 >**Solution:**
 > https://github.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/blob/master/Problem_2/Question_2_Popular_Department/PopularDepartment.java</br>
-> Tableau Link: https://public.tableau.com/profile/publish/Q_2_Popular_Department/AnalysisofPopularDepartments#!/publishconfirm
+> Tableau Link: https://public.tableau.com/profile/publish/Q_2_Popular_Department/AnalysisofPopularDepartments#!/publish-confirm
 
 ---- 
 > **Question 3: Find wasted space in every building over the years**
@@ -89,7 +89,7 @@ Questions that we solved
 
 >**Solution:**
 > https://github.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/blob/master/Problem_2/Question_2_Popular_Department/PopularDepartment.java</br>
-> Tableau Link: https://public.tableau.com/profile/publish/Q_2_Popular_Department/AnalysisofPopularDepartments#!/publishconfirm
+> Tableau Link: https://public.tableau.com/profile/publish/Q_2_Popular_Department/AnalysisofPopularDepartments#!/publish-confirm
 
 ---- 
 > **Question 4: Lecture Time Analysis**
