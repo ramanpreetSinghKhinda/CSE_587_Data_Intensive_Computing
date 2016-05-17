@@ -1,5 +1,7 @@
 <p align="center">Data Intensive Computing</p>
+==================================================
 <p align="center">Hadoop - MapReduce - Tableau</p>
+==================================================
 <p align="center">CSE 587</p>
 ==================================================
 
