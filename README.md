@@ -27,7 +27,7 @@ You can either run Hadoop MR jobs in HDFS which require you to run the HDFS ever
 	$ nano .bash_profile<br />
 	> export JAVA_HOME = $(/usr/libexec/java_home -v 1.7)<br />
 	> export HADOOP_HOME = */localpath/hadoop-2.6.4*<br />
-	> PATH =  "$\$$HADOOP_HOME/bin:$\$${PATH}"<br />
+	> PATH =  "$HADOOP_HOME/bin:${PATH}"<br />
 	> export PATH<br />
 
 	$ source .bash_profile
