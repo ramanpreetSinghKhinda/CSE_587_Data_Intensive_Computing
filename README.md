@@ -50,7 +50,7 @@ You can either run Hadoop MR jobs in HDFS which require you to run the HDFS ever
 
 Questions that we solved
 ------------------------------------
-> **Question 1: UB Course Demand**
+> **Question 1: UB Course Demand**</br>
 
 > Every semester UB offers great courses to its students and provide the best world class faculty to teach those courses. However, we have observed that some of the courses are always in high demand either due to increasing technology demand of that field or due to extra ordinary teaching faculty. 
 
@@ -61,7 +61,7 @@ Questions that we solved
 > Tableau Link: https://public.tableau.com/profile/publish/Q_1_UB_Course_Demand/P2_Q1#!/publish-confirm
 
 ---- 
-> **Question 2: Most Popular Department Every Year**
+> **Question 2: Most Popular Department Every Year**</br>
 > We see that UB consists of many departments. However, which among these is the most popular? How do we decide which one is the most popular? Answering this question can give us an idea as to which department needs more classrooms and more time slots. 
 
 > Since the popularity might change every year we also need to observe trends over the past few years. Therefore, our question would be, find the most popular department by number of enrollments every year.
@@ -71,7 +71,7 @@ Questions that we solved
 > Tableau Link: https://public.tableau.com/profile/publish/Q_2_Popular_Department/AnalysisofPopularDepartments#!/publish-confirm
 
 ---- 
-> **Question 3: Find wasted space in every building over the years**
+> **Question 3: Find wasted space in every building over the years**</br>
 > UB is broken into buildings and each building has a lab or a lecture hall. A lot of this space is usually wasted. 
 
 > Find out which buildings have been historically wasting space and which buildings have been efficient. So that we can allot more classes in the inefficient buildings
@@ -82,7 +82,7 @@ Questions that we solved
 > Tableau Link: https://public.tableau.com/profile/publish/P2_Q3_0/P2_Q3#!/publish-confirm
 
 ---- 
-> **Question 2: Most Popular Department Every Year**
+> **Question 2: Most Popular Department Every Year**</br>
 > We see that UB consists of many departments. However, which among these is the most popular? How do we decide which one is the most popular? Answering this question can give us an idea as to which department needs more classrooms and more time slots. 
 
 > Since the popularity might change every year we also need to observe trends over the past few years. Therefore, our question would be, find the most popular department by number of enrollments every year.
@@ -92,7 +92,7 @@ Questions that we solved
 > Tableau Link: https://public.tableau.com/profile/publish/Q_2_Popular_Department/AnalysisofPopularDepartments#!/publish-confirm
 
 ---- 
-> **Question 4: Lecture Time Analysis**
+> **Question 4: Lecture Time Analysis**</br>
 > Class scheduling is very complex problem and its all the more difficult in a department where the enrollments are increasing. We have observed that some of the classes are small as compared to the number of students enrolled and vice versa. This not only make it difficult for the professor to deliver his/her lecture efficiently but also creates a bad image of us among international students.
 
 > Being a World Class University we do not want our students to fight for a seat during the class. Can you utilize the “UB Course Scheduling data” to provide an insight on what time of the day have remained most occupied with lectures during the years and what is the most suitable time to reschedule these courses, so that we can allocate them class of proper size?
@@ -102,7 +102,7 @@ Questions that we solved
 > Tableau Link: https://public.tableau.com/profile/publish/Q_4_LectureTime_Analysis/P2_Q4#!/publish-confirm
 
 ---- 
-> **Question 5: Find the most popular exam slots in every building**
+> **Question 5: Find the most popular exam slots in every building**</br>
 > Exam season is stressful for everyone. For the students and especially for the staff. They have to ensure classes are allotted and everyone finds their place. From the 6 years’ exam data that we have we aim to find the most popular exam slots in every building. By this data we can find out what time slot most exams are held. We can further analyze this data and make decisions to move some of the exams at this time slot to another. We can also make decisions to move them to other halls to.
 
 >**Solution:**
