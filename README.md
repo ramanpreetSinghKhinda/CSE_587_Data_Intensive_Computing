@@ -14,19 +14,19 @@ More specifically we want to analyze the data and provide a presentation of the 
 ----------
 Steps for Hadoop Setup
 ---------------------------------
-#####You can either run Hadoop MR jobs in HDFS which require you to run the HDFS every time or you can also do it locally by **adding Hadoop jars in Eclipse**
+You can either run Hadoop MR jobs in HDFS which require you to run the HDFS every time or you can also do it locally by **adding Hadoop jars in Eclipse**
  
 1. Follow Tutorials from the mentioned links (make sure to set the **JAVA_HOME** and **HADOOP_HOME**  path in your **bash_profile**)
 	> - https://getblueshift.com/setting-up-hadoop-2-4-and-pig-0-12-on-osx-locally/
 	> -  http://www.mkyong.com/java/how-to-set-java_home-environment-variable-on-mac-os-x/
 	> -  http://www.tutorialspoint.com/hadoop/hadoop_enviornment_setup.htm
 
-2. Edit **bash_profile**
-	$ nano .bash_profile
-	> export JAVA_HOME = $(/usr/libexec/java_home -v 1.7)
-	> export HADOOP_HOME = */localpath/hadoop-2.6.4*
-	> PATH =  "$\$$HADOOP_HOME/bin:$\$${PATH}"
-	> export PATH
+2. Edit **bash_profile**<br />
+	$ nano .bash_profile<br />
+	> export JAVA_HOME = $(/usr/libexec/java_home -v 1.7)<br />
+	> export HADOOP_HOME = */localpath/hadoop-2.6.4*<br />
+	> PATH =  "$\$$HADOOP_HOME/bin:$\$${PATH}"<br />
+	> export PATH<br />
 
 	$ source .bash_profile
  
