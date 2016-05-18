@@ -82,16 +82,6 @@ Questions that we solved
 > Tableau Link: https://public.tableau.com/profile/publish/P2_Q3_0/P2_Q3#!/publish-confirm
 
 ---- 
-> **Question 2: Most Popular Department Every Year**</br>
-> We see that UB consists of many departments. However, which among these is the most popular? How do we decide which one is the most popular? Answering this question can give us an idea as to which department needs more classrooms and more time slots. 
-
-> Since the popularity might change every year we also need to observe trends over the past few years. Therefore, our question would be, find the most popular department by number of enrollments every year.
-
->**Solution:**
-> https://github.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/blob/master/Problem_2/Question_2_Popular_Department/PopularDepartment.java</br>
-> Tableau Link: https://public.tableau.com/profile/publish/Q_2_Popular_Department/AnalysisofPopularDepartments#!/publish-confirm
-
----- 
 > **Question 4: Lecture Time Analysis**</br>
 > Class scheduling is very complex problem and its all the more difficult in a department where the enrollments are increasing. We have observed that some of the classes are small as compared to the number of students enrolled and vice versa. This not only make it difficult for the professor to deliver his/her lecture efficiently but also creates a bad image of us among international students.
 
