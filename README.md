@@ -102,7 +102,7 @@ Questions that we solved
 
 Credits
 ----------
- We acknowledge and grateful to Professor Bina Ramamurthy (http://www.cse.buffalo.edu/faculty/bina/) and TA Junfei Wang (https://www.linkedin.com/in/junfei-wang-5971a848) for their continuous support throughout the course that helped us learn the skills of Data Intensive Computing
+ We acknowledge and grateful to [**Professor Bina Ramamurthy**](http://www.cse.buffalo.edu/faculty/bina/) and [**TA Junfei Wang**](https://www.linkedin.com/in/junfei-wang-5971a848) for their continuous support throughout the course that helped us learn the skills of Data Intensive Computing
  
  
 Contributors
