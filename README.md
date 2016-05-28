@@ -121,7 +121,7 @@ Ramanpreet Singh Khinda (rkhinda@buffalo.edu)</br>
 
 Elroy Preetham Alva (elroypre@buffalo.edu)
 
-![Img_5](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Images/5.png)
+![Img_5](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Resources/5.png)
  
 
 License
