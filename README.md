@@ -5,6 +5,7 @@
 Goal
 ------
 Learn Parallel Processing of Big Data using Hadoop MapReduce and Build Analysis and Visualization Dashboard(s) using Tableau
+**Note: The data processed in this project consists of files having more than 700,000 rows**
 
 Context & Problem Statement
 -------------------------------------------
@@ -37,16 +38,16 @@ You can either run Hadoop MR jobs in HDFS which require you to run the HDFS ever
 	https://github.com/winghc/hadoop2x-eclipse-plugin/blob/master/release/hadoop-eclipse-kepler-plugin-2.4.1.jar
 
 4. Goto Project Build path and add Hadoop jars as shown below
-![Img_1](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Images/1.png)
+![Img_1](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Resources/1.png)
 
 5. Configure program parameters in run configuration
-![Img_2](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Images/2.png)
+![Img_2](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Resources/2.png)
 
 	*Alternatively if you are running Hadoop on HDFS than you may want to give the HDFS path for the Arguments as shown below
 > hdfs://localhost:9000/user/rkhinda/input/ hdfs://localhost:9000/user/rkhinda/output/
 
 6.  Define the location of a Hadoop infrastructure for running MapReduce applications
-![Img_3](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Images/3.png)
+![Img_3](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Resources/3.png)
 
 Questions that we solved
 ------------------------------------
@@ -111,7 +112,7 @@ Questions that we solved
 
 Credits
 ----------
- We acknowledge and grateful to [**Professor Bina Ramamurthy**](http://www.cse.buffalo.edu/faculty/bina/) and [**TA Junfei Wang**](https://www.linkedin.com/in/junfei-wang-5971a848) for their continuous support throughout the **Course**([**CSE 587(http://www.cse.buffalo.edu/~bina/cse487/spring2016/CourseDescription/description.html)**]) that helped us learn the skills of Data Intensive Computing.
+ We acknowledge and grateful to [**Professor Bina Ramamurthy**](http://www.cse.buffalo.edu/faculty/bina/) and [**TA Junfei Wang**](https://www.linkedin.com/in/junfei-wang-5971a848) for their continuous support throughout the **Course**([**CSE 587**](http://www.cse.buffalo.edu/~bina/cse487/spring2016/CourseDescription/description.html)) that helped us learn the skills of Data Intensive Computing and solve real life problems using that.
  
  
 Contributors
