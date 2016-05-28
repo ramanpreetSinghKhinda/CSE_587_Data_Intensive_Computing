@@ -5,6 +5,7 @@
 Goal
 ------
 Learn Parallel Processing of Big Data using Hadoop MapReduce and Build Analysis and Visualization Dashboard(s) using Tableau</br>
+
 **Note: The data processed in this project consists of files having more than 700,000 rows**
 
 Context & Problem Statement
