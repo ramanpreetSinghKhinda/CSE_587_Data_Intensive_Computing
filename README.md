@@ -59,9 +59,10 @@ Questions that we solved
 > UB student affairs want to globalize some of its courses which are highly demanding among students but we are not able to shortlist the courses. Can you utilize the “UB Course Scheduling data” to gather an insight on which courses have always been the first choice for the students?
 
 **Solution:**
-> Source code:</br>
-> https://github.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/blob/master/Problem_2/Question_1_UB_Course_Demand/UBCourseDemand.java</br>
-> Tableau Link:</br>
+> **Source code:**
+> https://github.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/blob/master/Problem_2/Question_1_UB_Course_Demand/UBCourseDemand.java
+
+> **Tableau Link:**
 > https://public.tableau.com/profile/publish/Q_1_UB_Course_Demand/P2_Q1#!/publish-confirm
 
 ![Img_6](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Resources/6.png)
