@@ -1,6 +1,6 @@
 <p align="center">Data Intensive Computing</br>Hadoop - MapReduce - Tableau</br>CSE 587
 ==========================================================================================
-![Img_4](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Images/4.png)
+![Img_4](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Resources/4.png)
 
 Goal
 ------
@@ -60,6 +60,8 @@ Questions that we solved
 > https://github.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/blob/master/Problem_2/Question_1_UB_Course_Demand/UBCourseDemand.java</br>
 > Tableau Link: https://public.tableau.com/profile/publish/Q_1_UB_Course_Demand/P2_Q1#!/publish-confirm
 
+![Img_6](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Resources/6.png)
+
 ---- 
 > **Question 2: Most Popular Department Every Year**</br>
 > We see that UB consists of many departments. However, which among these is the most popular? How do we decide which one is the most popular? Answering this question can give us an idea as to which department needs more classrooms and more time slots. 
@@ -69,6 +71,8 @@ Questions that we solved
 >**Solution:**
 > https://github.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/blob/master/Problem_2/Question_2_Popular_Department/PopularDepartment.java</br>
 > Tableau Link: https://public.tableau.com/profile/publish/Q_2_Popular_Department/AnalysisofPopularDepartments#!/publish-confirm
+
+![Img_7](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Resources/7.png)
 
 ---- 
 > **Question 3: Find wasted space in every building over the years**</br>
@@ -81,6 +85,8 @@ Questions that we solved
 > https://github.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/blob/master/Problem_2/Question_3_Building_Utilization/BuildingUtilization.java</br>
 > Tableau Link: https://public.tableau.com/profile/publish/P2_Q3_0/P2_Q3#!/publish-confirm
 
+![Img_8](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Resources/8.png)
+
 ---- 
 > **Question 4: Lecture Time Analysis**</br>
 > Class scheduling is very complex problem and its all the more difficult in a department where the enrollments are increasing. We have observed that some of the classes are small as compared to the number of students enrolled and vice versa. This not only make it difficult for the professor to deliver his/her lecture efficiently but also creates a bad image of us among international students.
@@ -91,6 +97,8 @@ Questions that we solved
 > https://github.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/blob/master/Problem_2/Question_4_LectureTime_Analysis/LectureTimeAnalysis.java</br>
 > Tableau Link: https://public.tableau.com/profile/publish/Q_4_LectureTime_Analysis/P2_Q4#!/publish-confirm
 
+![Img_9](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Resources/9.png)
+
 ---- 
 > **Question 5: Find the most popular exam slots in every building**</br>
 > Exam season is stressful for everyone. For the students and especially for the staff. They have to ensure classes are allotted and everyone finds their place. From the 6 years’ exam data that we have we aim to find the most popular exam slots in every building. By this data we can find out what time slot most exams are held. We can further analyze this data and make decisions to move some of the exams at this time slot to another. We can also make decisions to move them to other halls to.
@@ -99,10 +107,11 @@ Questions that we solved
 > https://github.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/blob/master/Problem_2/Question_5_Popular_Exam_Slots/PopularExamSlots.java</br>
 > Tableau Link: https://public.tableau.com/profile/publish/Q_5_Popular_Exam_Slots/P2_Q5#!/publish-confirm
 
+![Img_10](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Resources/10.png)
 
 Credits
 ----------
- We acknowledge and grateful to [**Professor Bina Ramamurthy**](http://www.cse.buffalo.edu/faculty/bina/) and [**TA Junfei Wang**](https://www.linkedin.com/in/junfei-wang-5971a848) for their continuous support throughout the course that helped us learn the skills of Data Intensive Computing
+ We acknowledge and grateful to [**Professor Bina Ramamurthy**](http://www.cse.buffalo.edu/faculty/bina/) and [**TA Junfei Wang**](https://www.linkedin.com/in/junfei-wang-5971a848) for their continuous support throughout the **Course**([**CSE 587(http://www.cse.buffalo.edu/~bina/cse487/spring2016/CourseDescription/description.html)**]) that helped us learn the skills of Data Intensive Computing.
  
  
 Contributors
@@ -129,4 +138,4 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 Important
 ---------
-You are authorized to use the source code and make modifications as applicable by the **above Licence** however you are **not authorized** to make use of the university protected classroom scheduling data that is used in this project
+You are authorized to use the source code and make modifications as applicable by the **above Licence** however you are **not authorized** to make use of the university protected classroom scheduling data that is used in this project.
