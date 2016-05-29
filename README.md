@@ -30,7 +30,7 @@ You can either run Hadoop MR jobs in HDFS which require you to run the HDFS ever
 	```
 	export JAVA_HOME = $(/usr/libexec/java_home -v 1.7)
 	export HADOOP_HOME = /localpath/hadoop-2.6.4
-	PATH = "$HADOOP_HOME/bin:${PATH}"<br />
+	PATH = "$HADOOP_HOME/bin:${PATH}"
 	export PATH
 	```
 	$ source .bash_profile
