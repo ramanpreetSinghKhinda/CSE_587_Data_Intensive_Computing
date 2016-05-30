@@ -1,4 +1,4 @@
-<p align="center">Data Intensive Computing</br>Hadoop - MapReduce - Tableau</br>CSE 587
+<p align="center">Data Intensive Computing</br>Hadoop - MapReduce - Tableau</br>CSE 587 - Spring 2016
 ==========================================================================================
 ![Img_4](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Resources/4.png)
 
