@@ -1,5 +1,7 @@
-<p align="center">Data Intensive Computing</br>Hadoop - MapReduce - Tableau</br>CSE 587 - Spring 2016
-==========================================================================================
+<p align="center">Data Intensive Computing</br>Hadoop - MapReduce - Tableau</br>CSE 587 - Spring 2016 </p>
+
+------
+
 ![Img_4](https://raw.githubusercontent.com/ramanpreet1990/CSE_587_Data_Intensive_Computing/master/Resources/4.png)
 
 Goal
@@ -134,7 +136,7 @@ Credits
 Contributors
 ------------------
 Ramanpreet Singh Khinda (rkhinda@buffalo.edu)</br>
-[![website](https://raw.githubusercontent.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/master/Resources/ic_website.png)](https://branded.me/ramanpreet1990)		[![googleplay](https://raw.githubusercontent.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/master/Resources/ic_google_play.png)](https://play.google.com/store/apps/details?id=suny.buffalo.mis.research&hl=en)		[![twitter](https://raw.githubusercontent.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/master/Resources/ic_twitter.png)](https://twitter.com/dk_sunny1)		[![linkedin](https://raw.githubusercontent.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/master/Resources/ic_linkedin.png)](https://www.linkedin.com/in/ramanpreet1990)
+[![linkedin](https://raw.githubusercontent.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/master/Resources/ic_linkedin.png)](https://www.linkedin.com/in/ramanpreetSinghKhinda)
 
 Elroy Preetham Alva (elroypre@buffalo.edu)
 
